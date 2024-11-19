@@ -1,0 +1,31 @@
+*,
+*::before,
+*::after {
+    /* Colors */
+    --branco: #fff;
+    --preto: #000;
+    --roxo-indigo: #5300C8;
+    --azul-escuro: #03318C;
+    --roxo-violeta: #5D04D9;
+
+    /* Fonts  */
+    --fonte-principal: 'Press Start 2P', serif;
+    --fonte-secundaria: 'IBM Plex Mono', monospace;
+}
+
+body {
+    font-family: var(--fonte-principal);
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: auto;
+    background-color: var(--branco);
+    font-size: 24px;
+    color: var(--preto);
+    box-sizing: border-box;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
