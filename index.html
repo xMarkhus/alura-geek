@@ -24,19 +24,19 @@
             <header class="formulario__titulo">
                 <h2 class="formulario__titulo-texto">ADICIONAR<br>PRODUTO:</h2>
             </header>
-            <form class="formulario" action="POST">
+            <form class="formulario" data-form>
                 <div class="formulario__campo">
-                    <input name="nome" id="nome" class="campo__escrita" placeholder="nome..." required> 
+                    <input data-name name="nome" id="nome" type="text" class="campo__escrita" placeholder="nome..." required> 
                 </div>
                 <div class="formulario__campo">
-                    <input name="preco" id="preco" class="campo__escrita" placeholder="preço..." required> 
+                    <input data-price name="preco" id="preco" type="text" class="campo__escrita" placeholder="preço..." required> 
                 </div>
                 <div class="formulario__campo">
-                    <input name="imagem" id="imagem" class="campo__escrita" placeholder="imagem..." required> 
+                    <input data-image name="imagem" id="imagem" type="text" class="campo__escrita" placeholder="imagem..." required> 
                 </div>
                 <div class="formulario__botoes">
-                    <button type="submit" id="guardar">Guardar</button>
-                    <button type="reset" id="resetarr">Limpar</button>
+                    <button type="submit" class="botao__deletar" id="guardar">Guardar</button>
+                    <button type="reset" class="botao__limpar" id="resetar">Limpar</button>
                 </div>
             </form>
         </section>
@@ -46,77 +46,8 @@
                 <h2 class="produtos__titulo-texto">MEUS PRODUTOS:</h2>
             </header>
             <div class="card__container">
-                <article class="card">
-                    <div class="card__container-info">
-                        <img src="./assets/gameboy.png" alt="Imagem do Game Boy Classic" class="card__image">
-                        <h3 class="card__title">Game Boy Classic</h3>
-                        <div class="card__container-value">
-                            <p class="card__price">$ 60,00</p>
-                            <button class="card__delete" aria-label="Excluir Produto">
-                                <img src="./assets/icone-lixeira.png" alt="Ícone de exclusão">
-                            </button>
-                        </div>
-                    </div>
-                    <div class="card__container-info">
-                        <img src="./assets/storm.png" alt="Imagem do Game Boy Classic" class="card__image">
-                        <h3 class="card__title">Stormtrooper</h3>
-                        <div class="card__container-value">
-                            <p class="card__price">$ 60,00</p>
-                            <button class="card__delete" aria-label="Excluir Produto">
-                                <img src="./assets/icone-lixeira.png" alt="Ícone de exclusão">
-                            </button>
-                        </div>
-                    </div>
-                    <div class="card__container-info">
-                        <img src="./assets/gameboy.png" alt="Imagem do Game Boy Classic" class="card__image">
-                        <h3 class="card__title">Game Boy Classic</h3>
-                        <div class="card__container-value">
-                            <p class="card__price">$ 60,00</p>
-                            <button class="card__delete" aria-label="Excluir Produto">
-                                <img src="./assets/icone-lixeira.png" alt="Ícone de exclusão">
-                            </button>
-                        </div>
-                    </div>
-                    <div class="card__container-info">
-                        <img src="./assets/gameboy.png" alt="Imagem do Game Boy Classic" class="card__image">
-                        <h3 class="card__title">Game Boy Classic</h3>
-                        <div class="card__container-value">
-                            <p class="card__price">$ 60,00</p>
-                            <button class="card__delete" aria-label="Excluir Produto">
-                                <img src="./assets/icone-lixeira.png" alt="Ícone de exclusão">
-                            </button>
-                        </div>
-                    </div>
-                    <div class="card__container-info">
-                        <img src="./assets/gameboy.png" alt="Imagem do Game Boy Classic" class="card__image">
-                        <h3 class="card__title">Game Boy Classic</h3>
-                        <div class="card__container-value">
-                            <p class="card__price">$ 60,00</p>
-                            <button class="card__delete" aria-label="Excluir Produto">
-                                <img src="./assets/icone-lixeira.png" alt="Ícone de exclusão">
-                            </button>
-                        </div>
-                    </div>
-                    <div class="card__container-info">
-                        <img src="./assets/gameboy.png" alt="Imagem do Game Boy Classic" class="card__image">
-                        <h3 class="card__title">Game Boy Classic</h3>
-                        <div class="card__container-value">
-                            <p class="card__price">$ 60,00</p>
-                            <button class="card__delete" aria-label="Excluir Produto">
-                                <img src="./assets/icone-lixeira.png" alt="Ícone de exclusão">
-                            </button>
-                        </div>
-                    </div>
-                    <div class="card__container-info">
-                        <img src="./assets/gameboy.png" alt="Imagem do Game Boy Classic" class="card__image">
-                        <h3 class="card__title">Game Boy Classic</h3>
-                        <div class="card__container-value">
-                            <p class="card__price">$ 60,00</p>
-                            <button class="card__delete" aria-label="Excluir Produto">
-                                <img src="./assets/icone-lixeira.png" alt="Ícone de exclusão">
-                            </button>
-                        </div>
-                    </div>
+                <article class="card" data-products>
+                    
                 </article>                      
             </div>
         </section>
@@ -133,5 +64,6 @@
             </div>
         </div>
     </footer>
+    <script src="./js/main.js" type="module"></script>
 </body>
 </html>
